@@ -105,7 +105,7 @@ ipdb.set_trace(context=5, cond=get_diff() > 1e-6)
 willchen@twdev2:~/pwc/ml_lens_model_train/evaluate$ env PYTHONPATH=/home/willchen/usr/py/site-packages/ python -m pudb mutau_evaluation.py
 [willchen@dn121201 evaluate]$ env PYTHONPATH=/nfs/DEV/PWCGUI/willchen/usr/py/site-packages/ python -m pudb mutau_evaluation.py
 ```
-![](res/pudb_demo.png)
+![](images/pudb_demo.png?raw=true)
 # [web-pdb](https://github.com/romanvm/python-web-pdb)
 >Web-PDB is a web-interface for Python's built-in PDB debugger. It allows to debug Python scripts remotely in a web-browser.
 ## Demo usage:
@@ -115,7 +115,7 @@ import web_pdb
 web_pdb.set_trace()
 ```
 2.run usually
-![](res/web_pdb_demo.png)
+![](images/web_pdb_demo.png?raw=true)
 
 # [pysnooper](https://pypi.org/project/PySnooper/)
 ## Examples
