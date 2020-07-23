@@ -102,10 +102,10 @@ ipdb.set_trace(context=5, cond=get_diff() > 1e-6)
 >Its goal is to provide all the niceties of modern GUI-based debuggers in a more lightweight and keyboard-friendly package. PuDB allows you to debug code right where you write and test it–in a terminal. If you’ve worked with the excellent (but nowadays ancient) DOS-based Turbo Pascal or C tools, PuDB’s UI might look familiar.
 ## Demo
 ```
-willchen@twdev2:~/pwc/ml_lens_model_train/evaluate$ env PYTHONPATH=/home/willchen/usr/py/site-packages/ python -m pudb mutau_evaluation.py
-[willchen@dn121201 evaluate]$ env PYTHONPATH=/nfs/DEV/PWCGUI/willchen/usr/py/site-packages/ python -m pudb mutau_evaluation.py
+willchen@twdevxxx:~/pwc/ml_lens_model_train/evaluate$ env PYTHONPATH=/home/willchen/usr/py/site-packages/ python -m pudb mutau_evaluation.py
+[willchen@fdevxxx:evaluate]$ env PYTHONPATH=/nfs/DEV/PWCGUI/willchen/usr/py/site-packages/ python -m pudb mutau_evaluation.py
 ```
-![](images/pudb_demo.png?raw=true)
+![pudb](images/pudb_demo.png?raw=true)
 # [web-pdb](https://github.com/romanvm/python-web-pdb)
 >Web-PDB is a web-interface for Python's built-in PDB debugger. It allows to debug Python scripts remotely in a web-browser.
 ## Demo usage:
@@ -115,7 +115,7 @@ import web_pdb
 web_pdb.set_trace()
 ```
 2.run usually
-![](images/web_pdb_demo.png?raw=true)
+![web_pdb](images/web_pdb_demo.png?raw=true)
 
 # [pysnooper](https://pypi.org/project/PySnooper/)
 ## Examples
@@ -198,7 +198,15 @@ foo()
 ```
 # Summary
 - pdb
+  - officially support
 - ipdb
+  - more functions then pdb
 - pudb
+  - lightweight GUI-debugger
+  - see codes, stack, breakpoints and variables realtime
+  - execute commands like pdb
 - web-pdb
+  - need insert codes
 - pysnooper
+  - see each lines' condition with one running
+  - debug when interpreter exit(codes from swig)
